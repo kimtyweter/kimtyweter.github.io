@@ -1,0 +1,33 @@
+    table {
+        /* 看寬度佔螢幕大小多少 */
+        width: 50%;
+        /* 把空白處去除掉 */
+        border-collapse: collapse;
+    }
+    /* td {
+    border-color: blue;
+    border-style: double;
+    border-width: 3px;
+}
+
+th {
+    border-color: blue;
+    border-style: dashed;
+    border-width: 3px;
+} */
+    /* 縮減上面的code */
+    
+    th,
+    td {
+        border-color: blue;
+        border-style: dashed;
+        border-width: 3px;
+        /* 文字與線條之間的寬度控制 */
+        padding: 12px;
+        /* 字是否為靠中、靠左、靠右 */
+        text-align: center;
+        /* 背景顏色 */
+        background-color: #ec8cab;
+        /* 字體顏色 */
+        color: white;
+    }
