@@ -1,0 +1,20 @@
+body {
+    background-color: #ffbfe5;
+}
+
+h1 {
+    font-style: initial;
+    text-align: center;
+}
+
+table,
+tr,
+td {
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    border-block-end-width: 1px;
+    border-block-end-color: blue;
+    text-align: center;
+    text-decoration-style: wavy;
+    border-spacing: 25px;
+}
