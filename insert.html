@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kimtyweter 于恒商城</title>
+    <title>kimtyweter market</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,59 +17,72 @@
 
     <div class="container">
         <div class="jumbotron">
-            <h1>kimtyweter online market : 查詢商品</h1>
+            <h1>kimtyweter商城 : 新增產品資料</h1>
+
         </div>
 
         <!-- 工具列 -->
         <div class="form-group row">
             <div class="col">
-                <button id="query" type="button" class="btn btn-primary">查詢</button>
-                <button id="new" type="button" class="btn btn-primary">新增資料</button>
+                <button id="back" type="button" class="btn btn-primary">返回查詢</button>
             </div>
         </div>
 
-        <!-- 產品列表 -->
-        <div class="row" id="product-list">
-            <div class="col-*">
-                <div class="item">
-                    <img class="image" src="https://fakeimg.pl/160x160/" alt="" srcset="">
-                    <h3 class="name">產品一</h3>
-                    <p class="price">NT$ 999</p>
-                </div>
-            </div>
-            <div class="col-*">
-                <div class="item">
-                    <img class="image" src="https://fakeimg.pl/160x160/" alt="" srcset="">
-                    <h3 class="name">產品二</h3>
-                    <p class="price">NT$ 999</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- 分頁 -->
-        <div class="row" id="page">
+        <div class="row">
             <div class="col">
-                <nav aria-label="Page navigation example">
-                    <ul id="page-number" class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">&laquo;</a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">&raquo;</a>
-                        </li>
-                    </ul>
-                </nav>
+                <h1>新增資料</h1>
             </div>
         </div>
+
+        <!-- 資料欄位 -->
+        <div class="row">
+            <div class="col">
+                <div class="form-group row">
+                    <label for="inputProductName" class="col-sm-2 col-form-label">商品名稱</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputProductName" placeholder="請輸入商品名稱" value="米家自動感應洗手機">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputProductPrice" class="col-sm-2 col-form-label">商品價格</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputProductPrice" placeholder="請輸入商品價格" value="395">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputProductCount" class="col-sm-2 col-form-label">商品數量</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputProductCount" placeholder="請輸入商品數量" value="10">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputProductImage" class="col-sm-2 col-form-label">圖片網址</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputProductImage" placeholder="請輸入商品圖片網址" value="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1542426682.20729915.png">
+                    </div>
+                </div>
+
+                <!-- 工具列 -->
+                <div class="form-group row">
+                    <div class="col">
+                        <button id="insert" type="button" class="btn btn-primary">新增</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
 
 
         <!-- 頁尾 -->
         <footer>
             <div class="text-center">
-                2019 &copy; kimtyweter
+                2019 &copy; kimtyweter@NTU
             </div>
         </footer>
     </div>
@@ -94,8 +107,6 @@
     </div>
 
 
-
-
     <!-- 引入 Bootstrap 的 JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
@@ -103,7 +114,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- 引入我們自己寫的 JavaScript -->
-    <script src="./js/index.js"></script>
+    <script src="./js/insert.js"></script>
 </body>
 
 </html>
