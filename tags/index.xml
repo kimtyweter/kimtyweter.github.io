@@ -6,58 +6,49 @@
     <description>Recent content in Tags on Yu-Heng Chien</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Game</title>
-      <link>https://kimtyweter.github.io/tags/game/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <title>Dynamic Programming</title>
+      <link>https://kimtyweter.github.io/tags/dynamic-programming/</link>
+      <pubDate>Mon, 16 May 2022 10:07:47 +0600</pubDate>
       
-      <guid>https://kimtyweter.github.io/tags/game/</guid>
+      <guid>https://kimtyweter.github.io/tags/dynamic-programming/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>HTML</title>
-      <link>https://kimtyweter.github.io/tags/html/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <title>Optimization</title>
+      <link>https://kimtyweter.github.io/tags/optimization/</link>
+      <pubDate>Mon, 16 May 2022 10:07:47 +0600</pubDate>
       
-      <guid>https://kimtyweter.github.io/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>New</title>
-      <link>https://kimtyweter.github.io/tags/new/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://kimtyweter.github.io/tags/new/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Photos</title>
-      <link>https://kimtyweter.github.io/tags/photos/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://kimtyweter.github.io/tags/photos/</guid>
+      <guid>https://kimtyweter.github.io/tags/optimization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
       <link>https://kimtyweter.github.io/tags/python/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <pubDate>Mon, 16 May 2022 10:07:47 +0600</pubDate>
       
       <guid>https://kimtyweter.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>你他媽的</title>
-      <link>https://kimtyweter.github.io/tags/%E4%BD%A0%E4%BB%96%E5%AA%BD%E7%9A%84/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <title>Finance</title>
+      <link>https://kimtyweter.github.io/tags/finance/</link>
+      <pubDate>Wed, 30 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://kimtyweter.github.io/tags/%E4%BD%A0%E4%BB%96%E5%AA%BD%E7%9A%84/</guid>
+      <guid>https://kimtyweter.github.io/tags/finance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://kimtyweter.github.io/tags/machine-learning/</link>
+      <pubDate>Wed, 30 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     

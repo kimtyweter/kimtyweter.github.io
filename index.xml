@@ -6,14 +6,23 @@
     <description>Recent content on Yu-Heng Chien</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 May 2022 13:49:23 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>幹</title>
-      <link>https://kimtyweter.github.io/blog/post-13/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <title>Solving UFLP Problem</title>
+      <link>https://kimtyweter.github.io/blog/sc-facility/</link>
+      <pubDate>Mon, 16 May 2022 10:07:47 +0600</pubDate>
       
-      <guid>https://kimtyweter.github.io/blog/post-13/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+      <guid>https://kimtyweter.github.io/blog/sc-facility/</guid>
+      <description>Question1 The file 10node.xlsx contains data for a 10- node instance of the UFLP, with nodes located on the unit square and I = J, pictured in Figure 8.</description>
+    </item>
+    
+    <item>
+      <title>Exchange prediction</title>
+      <link>https://kimtyweter.github.io/blog/exchange/</link>
+      <pubDate>Wed, 30 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/exchange/</guid>
+      <description>Introduction Using linear regression by several curracny as factors to predict USD and EUD.</description>
     </item>
     
   </channel>
