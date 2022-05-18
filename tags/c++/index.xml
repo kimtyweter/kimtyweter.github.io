@@ -6,14 +6,23 @@
     <description>Recent content in C&#43;&#43; on Yu-Heng Chien</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 17 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Who Unfollow My Instagram? </title>
+      <link>https://kimtyweter.github.io/blog/instagram-unfollwers/</link>
+      <pubDate>Wed, 18 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/instagram-unfollwers/</guid>
+      <description>Language:  Python: Built full processes including analytics and API connections  Situation Instagram is one of the most popular social networking platforms in modern times.</description>
+    </item>
+    
     <item>
       <title>Scheduling with Genertic Algorithm</title>
       <link>https://kimtyweter.github.io/blog/scheduling/</link>
       <pubDate>Tue, 17 May 2022 10:07:47 +0600</pubDate>
       
       <guid>https://kimtyweter.github.io/blog/scheduling/</guid>
-      <description>Situation Due to the problem of uneven distribution of manpower in the company&amp;rsquo;s telephone customer service department for a long time, there is often a shortage of manpower or a surplus of manpower.</description>
+      <description>Language:  Python: Used in inbound call prediction and data processing C++: Used in Genertic Algorithm  Situation Due to the problem of uneven distribution of manpower in the company&amp;rsquo;s telephone customer service department for a long time, there is often a shortage of manpower or a surplus of manpower.</description>
     </item>
     
   </channel>
