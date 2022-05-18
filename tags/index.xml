@@ -8,11 +8,11 @@
     <language>zh-tw</language>
     <lastBuildDate>Wed, 18 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>C&#43;&#43;</title>
-      <link>https://kimtyweter.github.io/tags/c&#43;&#43;/</link>
+      <title>Game Design</title>
+      <link>https://kimtyweter.github.io/tags/game-design/</link>
       <pubDate>Wed, 18 May 2022 10:07:47 +0600</pubDate>
       
-      <guid>https://kimtyweter.github.io/tags/c&#43;&#43;/</guid>
+      <guid>https://kimtyweter.github.io/tags/game-design/</guid>
       <description></description>
     </item>
     
@@ -26,11 +26,20 @@
     </item>
     
     <item>
-      <title>Scheduling</title>
-      <link>https://kimtyweter.github.io/tags/scheduling/</link>
+      <title>System Design</title>
+      <link>https://kimtyweter.github.io/tags/system-design/</link>
       <pubDate>Wed, 18 May 2022 10:07:47 +0600</pubDate>
       
-      <guid>https://kimtyweter.github.io/tags/scheduling/</guid>
+      <guid>https://kimtyweter.github.io/tags/system-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://kimtyweter.github.io/tags/c&#43;&#43;/</link>
+      <pubDate>Tue, 17 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
@@ -49,6 +58,15 @@
       <pubDate>Tue, 17 May 2022 10:07:47 +0600</pubDate>
       
       <guid>https://kimtyweter.github.io/tags/matplotlib/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scheduling</title>
+      <link>https://kimtyweter.github.io/tags/scheduling/</link>
+      <pubDate>Tue, 17 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/tags/scheduling/</guid>
       <description></description>
     </item>
     

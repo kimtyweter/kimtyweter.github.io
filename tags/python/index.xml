@@ -8,6 +8,15 @@
     <language>zh-tw</language>
     <lastBuildDate>Wed, 18 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Turtle Game</title>
+      <link>https://kimtyweter.github.io/blog/turtle-game/</link>
+      <pubDate>Wed, 18 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/turtle-game/</guid>
+      <description>Language:  Python: Created interface and animate in the game  Introduction At the beginning, the player controls a turtle, it will keep moving forward, the player can only control the head of the turtle to face (up, down, left and right), and the goal is to touch the blue dot, and avoid touching itself or other obstacles.</description>
+    </item>
+    
+    <item>
       <title>Who Unfollow My Instagram? </title>
       <link>https://kimtyweter.github.io/blog/instagram-unfollwers/</link>
       <pubDate>Wed, 18 May 2022 10:07:47 +0600</pubDate>
