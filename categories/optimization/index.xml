@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Optimization on Yu-Heng Chien</title>
+    <link>https://kimtyweter.github.io/categories/optimization/</link>
+    <description>Recent content in Optimization on Yu-Heng Chien</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 17 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/categories/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scheduling with Genertic Algorithm</title>
+      <link>https://kimtyweter.github.io/blog/scheduling/</link>
+      <pubDate>Tue, 17 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/scheduling/</guid>
+      <description>Situation Due to the problem of uneven distribution of manpower in the company&amp;rsquo;s telephone customer service department for a long time, there is often a shortage of manpower or a surplus of manpower.</description>
+    </item>
+    
+  </channel>
+</rss>
