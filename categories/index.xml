@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Yu-Heng Chien</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 18 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Supply Chain</title>
+      <link>https://kimtyweter.github.io/categories/supply-chain/</link>
+      <pubDate>Thu, 19 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/categories/supply-chain/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Software Engineer</title>
       <link>https://kimtyweter.github.io/categories/software-engineer/</link>
@@ -35,20 +44,11 @@
     </item>
     
     <item>
-      <title>Supply Chain</title>
-      <link>https://kimtyweter.github.io/categories/supply-chain/</link>
-      <pubDate>Mon, 16 May 2022 10:07:47 +0600</pubDate>
-      
-      <guid>https://kimtyweter.github.io/categories/supply-chain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Finance</title>
-      <link>https://kimtyweter.github.io/categories/finance/</link>
+      <title>Data Science</title>
+      <link>https://kimtyweter.github.io/categories/data-science/</link>
       <pubDate>Wed, 30 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://kimtyweter.github.io/categories/finance/</guid>
+      <guid>https://kimtyweter.github.io/categories/data-science/</guid>
       <description></description>
     </item>
     

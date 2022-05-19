@@ -3,15 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kimtyweter.github.io/blog/</loc>
-    <lastmod>2022-05-18T10:07:47+06:00</lastmod>
+    <lastmod>2022-05-19T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://kimtyweter.github.io/categories/</loc>
-    <lastmod>2022-05-18T10:07:47+06:00</lastmod>
+    <lastmod>2022-05-19T10:07:47+06:00</lastmod>
   </url><url>
-    <loc>https://kimtyweter.github.io/tags/game-design/</loc>
-    <lastmod>2022-05-18T10:07:47+06:00</lastmod>
+    <loc>https://kimtyweter.github.io/tags/dynamic-programming/</loc>
+    <lastmod>2022-05-19T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>https://kimtyweter.github.io/tags/optimization/</loc>
+    <lastmod>2022-05-19T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://kimtyweter.github.io/tags/python/</loc>
+    <lastmod>2022-05-19T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>https://kimtyweter.github.io/blog/sc-stochastic-inventory-periodic-review/</loc>
+    <lastmod>2022-05-19T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>https://kimtyweter.github.io/categories/supply-chain/</loc>
+    <lastmod>2022-05-19T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>https://kimtyweter.github.io/tags/</loc>
+    <lastmod>2022-05-19T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>https://kimtyweter.github.io/</loc>
+    <lastmod>2022-05-19T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>https://kimtyweter.github.io/tags/game-design/</loc>
     <lastmod>2022-05-18T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://kimtyweter.github.io/categories/software-engineer/</loc>
@@ -20,16 +38,10 @@
     <loc>https://kimtyweter.github.io/tags/system-design/</loc>
     <lastmod>2022-05-18T10:07:47+06:00</lastmod>
   </url><url>
-    <loc>https://kimtyweter.github.io/tags/</loc>
-    <lastmod>2022-05-18T10:07:47+06:00</lastmod>
-  </url><url>
     <loc>https://kimtyweter.github.io/blog/turtle-game/</loc>
     <lastmod>2022-05-18T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://kimtyweter.github.io/blog/instagram-unfollwers/</loc>
-    <lastmod>2022-05-18T10:07:47+06:00</lastmod>
-  </url><url>
-    <loc>https://kimtyweter.github.io/</loc>
     <lastmod>2022-05-18T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://kimtyweter.github.io/tags/c&#43;&#43;/</loc>
@@ -62,25 +74,16 @@
     <loc>https://kimtyweter.github.io/about/</loc>
     <lastmod>2022-05-16T13:49:23+06:00</lastmod>
   </url><url>
-    <loc>https://kimtyweter.github.io/tags/dynamic-programming/</loc>
-    <lastmod>2022-05-16T10:07:47+06:00</lastmod>
-  </url><url>
-    <loc>https://kimtyweter.github.io/tags/optimization/</loc>
-    <lastmod>2022-05-16T10:07:47+06:00</lastmod>
-  </url><url>
     <loc>https://kimtyweter.github.io/blog/sc-facility/</loc>
     <lastmod>2022-05-16T10:07:47+06:00</lastmod>
   </url><url>
-    <loc>https://kimtyweter.github.io/categories/supply-chain/</loc>
-    <lastmod>2022-05-16T10:07:47+06:00</lastmod>
+    <loc>https://kimtyweter.github.io/categories/data-science/</loc>
+    <lastmod>2019-10-30T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://kimtyweter.github.io/blog/exchange/</loc>
     <lastmod>2019-10-30T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://kimtyweter.github.io/tags/finance/</loc>
-    <lastmod>2019-10-30T10:07:47+06:00</lastmod>
-  </url><url>
-    <loc>https://kimtyweter.github.io/categories/finance/</loc>
     <lastmod>2019-10-30T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://kimtyweter.github.io/tags/machine-learning/</loc>

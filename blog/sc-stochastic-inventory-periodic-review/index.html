@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Taiwan">
+  <meta name="description" content="Python">
   <meta name="author" content="Yu-Heng">
   <meta name="generator" content="Hugo 0.98.0" />
 
@@ -132,126 +132,90 @@
 </header>
 <!-- /navigation -->
 
-
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-4">
-  <div class="widgets">
-    
-    <div class="widget">
-      
-      <h4 class="widget-title">About Me</h4>
-      
-      <img src="https://kimtyweter.github.io/images/alan.jpg" alt=""
-        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
-      
-      <p>Yu-Heng Chien</p>
-      <a href="https://kimtyweter.github.io/about/" class="btn btn-outline-primary">Know More</a>
-      
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Category</h4>
-      <ul class="list-unstyled">
-        <li><a
-            href="/categories/data-science/">Data science</a>
-        </li>
-        <li><a
-            href="/categories/data-visualization/">Data visualization</a>
-        </li>
-        <li><a
-            href="/categories/optimization/">Optimization</a>
-        </li>
-        <li><a
-            href="/categories/software-engineer/">Software engineer</a>
-        </li>
-        <li><a
-            href="/categories/supply-chain/">Supply chain</a>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Tag</h4>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/c&#43;&#43;/">C</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/dynamic-programming/">Dynamic programming</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/finance/">Finance</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/game-design/">Game design</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/geopandas/">Geopandas</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/machine-learning/">Machine learning</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/matplotlib/">Matplotlib</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/optimization/">Optimization</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/python/">Python</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/scheduling/">Scheduling</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/sql/">SQL</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/system-design/">System design</a></li>
-      </ul>
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Social</h4>
-      <ul class="list-inline social-links">
+      <div class="col-lg-8 mx-auto">
         
-        <li class="list-inline-item"><a href="https://www.youtube.com/channel/UChCM67bFLkjnGxsmWYaFYNg/featured"><i class="ti-youtube"></i></a></li>
+        <a href="/categories/supply-chain"
+          class="text-primary">Supply chain</a>
         
-        <li class="list-inline-item"><a href="https://github.com/kimtyweter"><i class="ti-github"></i></a></li>
-        
-        <li class="list-inline-item"><a href="https://www.linkedin.com/in/kimtyweter/"><i class="ti-linkedin"></i></a></li>
-        
-      </ul>
-    </div>
-    
-  </div>
-</div>
-
-      
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="row">
+        <h2>Solving Stochastic Inventory Problem: Periodic Review</h2>
+        <div class="mb-3 post-meta">
+          <span>By Yu-Heng</span>
           
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-
-        <div class="card-body px-0">
-        
-        <a href="/categories/optimization"
-            class="text-primary">Optimization</a>
-        
-        <a href="https://kimtyweter.github.io/blog/scheduling/" class="h5 d-block my-3">Scheduling with Genertic Algorithm</a>
-        
-        <p class="card-text">Python/C&#43;&#43;</p>
-        <a href="https://kimtyweter.github.io/blog/scheduling/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>19 May 2022</span>
           
         </div>
-      </div>
-      
+        
+        <img src="https://kimtyweter.github.io/images/post/stochastic-inventory-periodic-review.png" class="img-fluid w-100 mb-4" alt="Solving Stochastic Inventory Problem: Periodic Review">
+        
+        <div class="content mb-5">
+          <h3 id="language"><strong>Language</strong>:</h3>
+<ol>
+<li><strong>Python</strong>: Created full algorithm for solving periofic review&rsquo;s stochastic inventory problem in real life</li>
+</ol>
+<h3 id="situation"><strong>Situation</strong></h3>
+<p>Weekly demand for refrigerators at an appliance store has a Poisson distribution with 4. The holding and stockout cost for refrigerators at the store are <strong>$40</strong> and <strong>$125</strong> per week, respectively. Replenishment orders for refrigerators incur a <strong>fixed cost of $150</strong>.</p>
+<p><em>Find the optimal parameters (s, S), and the corresponding optimal cost</em>.</p>
+<h3 id="solution-approach"><strong>Solution Approach</strong></h3>
+<p>Additionalpropertiesthathelpdeviseanalgorithm:</p>
+<ol>
+<li>
+<p>Let y* minimize g(y); then s* ≤ y* ≤ S*</p>
+<ul>
+<li>We only need to look for s≤y* and S≥y*</li>
+</ul>
+</li>
+<li>
+<p>Let s = max{y &lt; y*|g(y, S) ≤ g(y)}; then s is the optimal reorder point for S</p>
+<ul>
+<li>Given S, the biggest s smaller than y* such that the cost per period of the corresponding (s, S) policy does not exceed the single period cost at that reorder point is optimal for S</li>
+</ul>
+</li>
+<li>
+<p>If S&rsquo; and S are two order-up-to levels, then g(s*(S),S) &lt; g(s*(S&rsquo;),S&rsquo;) if and only if g(s*(S&rsquo;),S) &lt; g(s*(S&rsquo;),S')</p>
+<ul>
+<li>Suppose we use the optimal reorder point for S&rsquo; (s*(S&rsquo;)) together with some other S; if this is better than using this reorder point with S&rsquo; itself, then the best solution with S is better than the best solution with S'</li>
+</ul>
+</li>
+<li>
+<p>If (s*, S*) are optimal with cost g* = g(s*, S*) then S* ≤ max{y ≥ y*|g(y) ≤ g*}</p>
+<ul>
+<li>Given a proposed (s, S), if there is a y&rsquo; ≥ y* with single-period cost g(y&rsquo;) less than or equal to g(s, S) and S &gt; y&rsquo;, then (s, S) cannot be optimal</li>
+</ul>
+</li>
+<li>
+<p>We can now state an algorithm for finding (s*, S*)</p>
+</li>
+</ol>
+<h3 id="algorithm"><strong>Algorithm</strong></h3>
+<pre tabindex="0"><code>While g(S) ≤ g&#39;: 
+    If g(s&#39;, S) &lt; g&#39;,
+        Set S&#39;=S
+            While g(s,S&#39;)≤g(s+1):
+                Sets=s+1
+            End while
+        Set s&#39;=s;g&#39;=g(s&#39;,S&#39;)
+    End if
+    Set S = S + 1
+End while
+Return (s&#39;, S&#39;)
+</code></pre><h3 id="result"><strong>Result</strong></h3>
+<ul>
+<li><a href="https://youtu.be/HxQVtl_nPC8">Demo</a></li>
+<li><a href="https://github.com/kimtyweter/stochastic-inventory-periodic-review">Code</a></li>
+</ul>
 
-      
-      <div class="col-12 mt-5">
+        </div>
+
+        
         
       </div>
     </div>
   </div>
 </section>
-
 
 
 

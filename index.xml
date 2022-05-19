@@ -6,7 +6,16 @@
     <description>Recent content on Yu-Heng Chien</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 18 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solving Stochastic Inventory Problem: Periodic Review</title>
+      <link>https://kimtyweter.github.io/blog/sc-stochastic-inventory-periodic-review/</link>
+      <pubDate>Thu, 19 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/sc-stochastic-inventory-periodic-review/</guid>
+      <description>Language:  Python: Created full algorithm for solving periofic review&amp;rsquo;s stochastic inventory problem in real life  Situation Weekly demand for refrigerators at an appliance store has a Poisson distribution with 4.</description>
+    </item>
+    
     <item>
       <title>Turtle Game</title>
       <link>https://kimtyweter.github.io/blog/turtle-game/</link>
@@ -17,7 +26,7 @@
     </item>
     
     <item>
-      <title>Who Unfollow My Instagram? </title>
+      <title>Who Unfollowed My Instagram? </title>
       <link>https://kimtyweter.github.io/blog/instagram-unfollwers/</link>
       <pubDate>Wed, 18 May 2022 10:07:47 +0600</pubDate>
       
