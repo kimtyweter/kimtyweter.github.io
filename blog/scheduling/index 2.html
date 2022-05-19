@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python">
+  <meta name="description" content="Python/C&#43;&#43;">
   <meta name="author" content="Yu-Heng">
   <meta name="generator" content="Hugo 0.98.0" />
 
@@ -137,32 +137,37 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
         
-        <a href="/categories/software-engineer"
-          class="text-primary">Software engineer</a>
+        <a href="/categories/optimization"
+          class="text-primary">Optimization</a>
         
-        <h2>Turtle Game</h2>
+        <h2>Scheduling with Genertic Algorithm</h2>
         <div class="mb-3 post-meta">
           <span>By Yu-Heng</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>18 May 2022</span>
+          <span>17 May 2022</span>
           
         </div>
         
-        <img src="https://kimtyweter.github.io/images/post/turtle%20game.png" class="img-fluid w-100 mb-4" alt="Turtle Game">
+        <img src="https://kimtyweter.github.io/images/post/calendar.png" class="img-fluid w-100 mb-4" alt="Scheduling with Genertic Algorithm">
         
         <div class="content mb-5">
           <h3 id="language"><strong>Language</strong>:</h3>
 <ol>
-<li><strong>Python</strong>: Created interface and animate in the game</li>
+<li><strong>Python</strong>: Used in inbound call prediction and data processing</li>
+<li><strong>C++</strong>: Used in <strong>Genertic Algorithm</strong></li>
 </ol>
-<h3 id="introduction"><strong>Introduction</strong></h3>
-<p>At the beginning, the player controls a turtle, it will keep moving forward, the player can only control the head of the turtle to face (up, down, left and right), and the goal is to touch the blue dot, and avoid touching itself or other obstacles. Every time the turtle eats a blue dot, its body grows.
-There are walls on all four sides of the game interface (all of which cannot be crossed), and the highest score and the current score are recorded in words.</p>
+<h3 id="situation"><strong>Situation</strong></h3>
+<p>Due to the problem of <strong>uneven distribution</strong> of manpower in the company&rsquo;s telephone customer service department for a long time, there is often a shortage of manpower or a surplus of manpower. Manpower shortage and manpower surplus are both key factors that affect the operation of the company, because the shortage of manpower will make the service level of the company decline, and affect the reputation of the company or the perception of the company. If there is excess manpower, it is a waste of the company&rsquo;s labor costs.</p>
+<h3 id="task"><strong>Task</strong></h3>
+<p>I try to combine the three methods of data science, programming, and optimization methods into one, and integrate these three methods into a system to help companies achieve the purpose of human resource optimization.</p>
+<h3 id="action"><strong>Action</strong></h3>
+<p>First, I predict the incoming telephone line volume of the next month, and convert the predicted results into the required manpower through systematic simulation. Finally, we will apply the mathematical model of <strong>linear programming</strong> to convert the manpower constraints and company policies into several mathematically expressed sets of <strong>decision variables</strong>, an <strong>objective function</strong>, and a set of <strong>constraints</strong>. Lastly, I apply them to the genetic algorithm developed in C++ to allocate human resources. The end result is the shift schedule that each customer service employee receives.</p>
 <h3 id="result"><strong>Result</strong></h3>
 <ul>
-<li><a href="https://youtu.be/Z8GcgpVkWGk">Demo</a></li>
-<li><a href="https://github.com/kimtyweter/turtle-game">Code</a></li>
+<li><strong>Scheduling work efficiency:</strong> one day becomes half an hour</li>
+<li><strong>Early warning effect:</strong> the rate of absenteeism can be calculated, so that the call center can be prepared</li>
+<li><strong>Manpower utilization:</strong> 82% to 89%</li>
 </ul>
 
         </div>

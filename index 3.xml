@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yu-Heng Chien</title>
+    <link>https://kimtyweter.github.io/</link>
+    <description>Recent content on Yu-Heng Chien</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 18 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Turtle Game</title>
+      <link>https://kimtyweter.github.io/blog/turtle-game/</link>
+      <pubDate>Wed, 18 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/turtle-game/</guid>
+      <description>Language:  Python: Created interface and animate in the game  Introduction At the beginning, the player controls a turtle, it will keep moving forward, the player can only control the head of the turtle to face (up, down, left and right), and the goal is to touch the blue dot, and avoid touching itself or other obstacles.</description>
+    </item>
+    
+    <item>
+      <title>Who Unfollow My Instagram? </title>
+      <link>https://kimtyweter.github.io/blog/instagram-unfollwers/</link>
+      <pubDate>Wed, 18 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/instagram-unfollwers/</guid>
+      <description>Language:  Python: Built full processes including analytics and API connections  Situation Instagram is one of the most popular social networking platforms in modern times.</description>
+    </item>
+    
+    <item>
+      <title>Mobility Patterns of Low-Income People Lead to High Exposure to Respiratory Hazards</title>
+      <link>https://kimtyweter.github.io/blog/air-pollution/</link>
+      <pubDate>Tue, 17 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/air-pollution/</guid>
+      <description>Introduction This research investigates the relationship between PM2.5 emissions and economic groups in Harris county, Texas.</description>
+    </item>
+    
+    <item>
+      <title>Scheduling with Genertic Algorithm</title>
+      <link>https://kimtyweter.github.io/blog/scheduling/</link>
+      <pubDate>Tue, 17 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/scheduling/</guid>
+      <description>Language:  Python: Used in inbound call prediction and data processing C++: Used in Genertic Algorithm  Situation Due to the problem of uneven distribution of manpower in the company&amp;rsquo;s telephone customer service department for a long time, there is often a shortage of manpower or a surplus of manpower.</description>
+    </item>
+    
+    <item>
+      <title>Solving UFLP Problem</title>
+      <link>https://kimtyweter.github.io/blog/sc-facility/</link>
+      <pubDate>Mon, 16 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/sc-facility/</guid>
+      <description>Question1 The file 10node.xlsx contains data for a 10- node instance of the UFLP, with nodes located on the unit square and I = J, pictured in Figure 8.</description>
+    </item>
+    
+    <item>
+      <title>Exchange prediction</title>
+      <link>https://kimtyweter.github.io/blog/exchange/</link>
+      <pubDate>Wed, 30 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/exchange/</guid>
+      <description>Introduction Using linear regression by several curracny as factors to predict USD and EUD.</description>
+    </item>
+    
+  </channel>
+</rss>
