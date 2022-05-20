@@ -8,6 +8,15 @@
     <language>zh-tw</language>
     <lastBuildDate>Thu, 19 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/tags/dynamic-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Solving Stochastic Inventory Problem: Continuous Review</title>
+      <link>https://kimtyweter.github.io/blog/sc-stochastic-inventory-continuous-review/</link>
+      <pubDate>Thu, 19 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/sc-stochastic-inventory-continuous-review/</guid>
+      <description>Language:  Python: Determine reorder point and order quantity to minimize expected cost per year  Situation Suppose now that the rate at which the plant uses power-lock mechanisms is stochastic and normally distributed, with a mean of 192 per day (8 per hour) and a standard deviation of 17.</description>
+    </item>
+    
+    <item>
       <title>Solving Stochastic Inventory Problem: Periodic Review</title>
       <link>https://kimtyweter.github.io/blog/sc-stochastic-inventory-periodic-review/</link>
       <pubDate>Thu, 19 May 2022 10:07:47 +0600</pubDate>
