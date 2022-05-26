@@ -140,7 +140,7 @@
         <a href="/categories/supply-chain"
           class="text-primary">Supply chain</a>
         
-        <h2>Solving UFLP Problem</h2>
+        <h2>Solving Facility Location Problems</h2>
         <div class="mb-3 post-meta">
           <span>By Yu-Heng</span>
           
@@ -149,19 +149,345 @@
           
         </div>
         
-        <img src="https://kimtyweter.github.io/images/post/factory.png" class="img-fluid w-100 mb-4" alt="Solving UFLP Problem">
+        <img src="https://kimtyweter.github.io/images/post/facility-location.png" class="img-fluid w-100 mb-4" alt="Solving Facility Location Problems">
         
         <div class="content mb-5">
-          <h3 id="question1">Question1</h3>
-<p>The file 10node.xlsx contains data for a 10- node instance of the UFLP, with nodes located on the unit square and I = J, pictured in Figure 8.22. The file lists the x- and y-coordinates, demands hi, and fixed costs fj for each node, as well as the transportation cost cij between each pair of nodes i and j. Transportation costs equal 10 times the Euclidean distance between the nodes. All fixed costs equal 200.
-Solve this instance of the UFLP exactly by implementing the UFLP in the modeling language of your choice and solving it with a MIP solver. Report the optimal locations, optimal assignments, and optimal cost.</p>
-<h3 id="language-tool-package">Language/ Tool/ Package</h3>
+          <h2 id="introduction">Introduction</h2>
+<p>Where to set up factories and workshops is one of the typical problems of industrial engineering. This type of model usually takes into account issues such as demand, shipping costs and inventory costs to find the most suitable location to set up facilities.</p>
+<p>Therefore, this article applies three common models to solve facility location problems:</p>
+<ol>
+<li>Uncapacitated fixed-charge location problem(UFLP):</li>
+</ol>
+<ul>
+<li><strong>Minimize fixed + transportation cost</strong></li>
+</ul>
+<ol start="2">
+<li>Set covering location problem(SCLP):</li>
+</ol>
+<ul>
+<li><strong>Minimize number of facilities</strong></li>
+</ul>
+<ol start="3">
+<li>Maximum covering location problem(MCLP):</li>
+</ol>
+<ul>
+<li><strong>Maximize covered demands</strong></li>
+</ul>
+<h2 id="language-tool-package">Language/ Tool/ Package</h2>
 <h5 id="python"><strong>Python</strong></h5>
 <ol>
 <li><strong>gurobipy</strong>: The Gurobi Optimizer is a <strong>mathematical optimization software</strong> library for solving mixed-integer linear and quadratic optimization problems.</li>
 <li><strong>pandas</strong>: open source data analysis and manipulation tool</li>
 <li><strong>itertools</strong>: this module implements a number of iterator building blocks inspired by constructs from APL, Haskell, and SML.</li>
 </ol>
+<h2 id="background-information">Background Information</h2>
+<h4 id="1-customer">1. Customer</h4>
+<p>Data for a 10- node demands, fixed cost and location (express by x, y)</p>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>x</th>
+<th>y</th>
+<th>Demand</th>
+<th>Fixed Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0.2</td>
+<td>0.1</td>
+<td>60</td>
+<td>200</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.9</td>
+<td>0.7</td>
+<td>27</td>
+<td>200</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.2</td>
+<td>0.4</td>
+<td>29</td>
+<td>200</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0.9</td>
+<td>0.2</td>
+<td>26</td>
+<td>200</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0.5</td>
+<td>0.9</td>
+<td>33</td>
+<td>200</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0.6</td>
+<td>0.3</td>
+<td>15</td>
+<td>200</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0.8</td>
+<td>0.4</td>
+<td>17</td>
+<td>200</td>
+</tr>
+<tr>
+<td>8</td>
+<td>0.5</td>
+<td>0.3</td>
+<td>97</td>
+<td>200</td>
+</tr>
+<tr>
+<td>9</td>
+<td>0.3</td>
+<td>0.6</td>
+<td>97</td>
+<td>200</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0.2</td>
+<td>0.6</td>
+<td>19</td>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/images/facility-location/instance.png" alt=""></p>
+<h4 id="2-distance">2. Distance:</h4>
+<p>Distance is computed by Euclidean distance between the nodes.</p>
+<table>
+<thead>
+<tr>
+<th>Facilities</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0.0000</td>
+<td>9.2195</td>
+<td>3.0000</td>
+<td>7.0711</td>
+<td>8.5440</td>
+<td>4.4721</td>
+<td>6.7082</td>
+<td>3.6056</td>
+<td>5.0990</td>
+<td>5.0000</td>
+</tr>
+<tr>
+<td>2</td>
+<td>9.2195</td>
+<td>0.0000</td>
+<td>7.6158</td>
+<td>5.0000</td>
+<td>4.4721</td>
+<td>5.0000</td>
+<td>3.1623</td>
+<td>5.6569</td>
+<td>6.0828</td>
+<td>7.0711</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3.0000</td>
+<td>7.6158</td>
+<td>0.0000</td>
+<td>7.2801</td>
+<td>5.8310</td>
+<td>4.1231</td>
+<td>6.0000</td>
+<td>3.1623</td>
+<td>2.2361</td>
+<td>2.0000</td>
+</tr>
+<tr>
+<td>4</td>
+<td>7.0711</td>
+<td>5.0000</td>
+<td>7.2801</td>
+<td>0.0000</td>
+<td>8.0623</td>
+<td>3.1623</td>
+<td>2.2361</td>
+<td>4.1231</td>
+<td>7.2111</td>
+<td>8.0623</td>
+</tr>
+<tr>
+<td>5</td>
+<td>8.5440</td>
+<td>4.4721</td>
+<td>5.8310</td>
+<td>8.0623</td>
+<td>0.0000</td>
+<td>6.0828</td>
+<td>5.8310</td>
+<td>6.0000</td>
+<td>3.6056</td>
+<td>4.2426</td>
+</tr>
+<tr>
+<td>6</td>
+<td>4.4721</td>
+<td>5.0000</td>
+<td>4.1231</td>
+<td>3.1623</td>
+<td>6.0828</td>
+<td>0.0000</td>
+<td>2.2361</td>
+<td>1.0000</td>
+<td>4.2426</td>
+<td>5.0000</td>
+</tr>
+<tr>
+<td>7</td>
+<td>6.7082</td>
+<td>3.1623</td>
+<td>6.0000</td>
+<td>2.2361</td>
+<td>5.8310</td>
+<td>2.2361</td>
+<td>0.0000</td>
+<td>3.1623</td>
+<td>5.3852</td>
+<td>6.3246</td>
+</tr>
+<tr>
+<td>8</td>
+<td>3.6056</td>
+<td>5.6569</td>
+<td>3.1623</td>
+<td>4.1231</td>
+<td>6.0000</td>
+<td>1.0000</td>
+<td>3.1623</td>
+<td>0.0000</td>
+<td>3.6056</td>
+<td>4.2426</td>
+</tr>
+<tr>
+<td>9</td>
+<td>5.0990</td>
+<td>6.0828</td>
+<td>2.2361</td>
+<td>7.2111</td>
+<td>3.6056</td>
+<td>4.2426</td>
+<td>5.3852</td>
+<td>3.6056</td>
+<td>0.0000</td>
+<td>1.0000</td>
+</tr>
+<tr>
+<td>10</td>
+<td>5.0000</td>
+<td>7.0711</td>
+<td>2.0000</td>
+<td>8.0623</td>
+<td>4.2426</td>
+<td>5.0000</td>
+<td>6.3246</td>
+<td>4.2426</td>
+<td>1.0000</td>
+<td>0.0000</td>
+</tr>
+</tbody>
+</table>
+<h2 id="uncapacitated-fixed-charge-location-problem-uflp">Uncapacitated Fixed-charge Location Problem (UFLP)</h2>
+<h4 id="example">Example:</h4>
+<p>The background information contains nodes located on the unit square and I = J. The background information lists the x- and y-coordinates, demands hi, and fixed costs fj for each node, as well as the transportation cost cij between each pair of nodes i and j. Transportation costs equal 10 times the Euclidean distance between the nodes. All fixed costs equal 200.</p>
+<h4 id="solution-approach">Solution Approach:</h4>
+<h6 id="decision-variables">Decision variables:</h6>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>cartesian_prod = list(product(range(0, 10), range(0, 10)))
+</span></span><span style="display:flex;"><span>cust = m.addVars(cartesian_prod, lb = 0 ,vtype = GRB.CONTINUOUS, name=<span style="color:#009c00">&#39;cust&#39;</span>)
+</span></span></code></pre></div><h6 id="objection">Objection:</h6>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>m.setObjective(gp.quicksum(df_demand[customer] * shipping_cost[customer, facility] * cust[customer, facility] <span style="color:#00f">for</span> customer in range(0, 10) <span style="color:#00f">for</span> facility in range(0, len(fact))) + gp.quicksum(fact[facility] <span style="color:#00f">for</span> facility in range(0, len(fact))) * 200 , GRB.MINIMIZE)
+</span></span></code></pre></div><h6 id="constraints">Constraints:</h6>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>m.addConstrs((gp.quicksum(cust[(customer, facility)] <span style="color:#00f">for</span> facility in range(0, 10)) == 1 <span style="color:#00f">for</span> customer in range(0, 10)), name=<span style="color:#009c00">&#39;Demand&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>m.addConstrs((cust[customer, facility] &lt;= fact[facility] <span style="color:#00f">for</span> customer, facility in cartesian_prod), name=<span style="color:#009c00">&#39;Setup2ship&#39;</span>)
+</span></span></code></pre></div><h6 id="results">Results:</h6>
+<p><img src="/images/facility-location/uslp-results.png" alt=""></p>
+<h4 id="code">Code</h4>
+<ul>
+<li>
+<p><a href="https://github.com/kimtyweter/Facility-Location-Models/blob/main/USLP.ipynb">Jupyter Notebook</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kimtyweter/Facility-Location-Models/blob/main/uflp.py">Python</a></p>
+</li>
+</ul>
+<h2 id="set-covering-location-problem-sclp">Set Covering Location Problem (SCLP)</h2>
+<h4 id="example-1">Example:</h4>
+<p>Using the data from background information, solve the SCLP exactly by implementing it in the modeling language with a MIP solver. Set the fixed cost of every facility equal to 1.
+Assume that facility j covers customer i if cij ≤ 2.5. Report the optimal locations.</p>
+<h4 id="solution-approach-1">Solution Approach:</h4>
+<h6 id="decision-variables-1">Decision variables:</h6>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>fact = m.addVars(10, vtype = GRB.BINARY, name=<span style="color:#009c00">&#39;fact&#39;</span>)
+</span></span></code></pre></div><h6 id="objection-1">Objection:</h6>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>obj = gp.quicksum(f * fact[facility] <span style="color:#00f">for</span> facility in range(0, 10))
+</span></span><span style="display:flex;"><span>m.setObjective(obj, GRB.MINIMIZE)
+</span></span></code></pre></div><h6 id="constraints-1">Constraints:</h6>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>m.addConstrs((gp.quicksum(aij[(customer, facility)] * fact[facility] <span style="color:#00f">for</span> facility in range(0, 10)) &gt;= 1 <span style="color:#00f">for</span> customer in range(0, 10)), name=<span style="color:#009c00">&#39;coverage&#39;</span>)
+</span></span></code></pre></div><h6 id="results-1">Results:</h6>
+<p><img src="/images/facility-location/sclp-results.png" alt=""></p>
+<h4 id="code-1">Code</h4>
+<ul>
+<li>
+<p><a href="https://github.com/kimtyweter/Facility-Location-Models/blob/main/SCLP.ipynb">Jupyter Notebook</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kimtyweter/Facility-Location-Models/blob/main/sclp.py">Python</a></p>
+</li>
+</ul>
+<h2 id="maximum-covering-location-problem-mclp">Maximum covering location problem (MCLP)</h2>
+<h4 id="example-2">Example:</h4>
+<p>Using the data from background information, solve the MCLP exactly by implementing it in the modeling language with a MIP solver. Set p = 4. Assume that facility j covers customer i if cij ≤ 2.5.</p>
+<p>Report the optimal locations and the total number of demands covered.</p>
+<h4 id="solution-approach-2">Solution Approach:</h4>
+<h6 id="decision-variables-2">Decision variables:</h6>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>fact = m.addVars(10, vtype = GRB.BINARY, name=<span style="color:#009c00">&#39;fact&#39;</span>)
+</span></span></code></pre></div><h6 id="objection-2">Objection:</h6>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>obj = gp.quicksum(f * fact[facility] <span style="color:#00f">for</span> facility in range(0, 10))
+</span></span><span style="display:flex;"><span>m.setObjective(obj, GRB.MINIMIZE)
+</span></span></code></pre></div><h6 id="constraints-2">Constraints:</h6>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>m.addConstrs((gp.quicksum(aij[(customer, facility)] * fact[facility] <span style="color:#00f">for</span> facility in range(0, 10)) &gt;= 1 <span style="color:#00f">for</span> customer in range(0, 10)), name=<span style="color:#009c00">&#39;coverage&#39;</span>)
+</span></span></code></pre></div><h6 id="results-2">Results:</h6>
+<p><img src="/images/facility-location/mclp-results.png" alt=""></p>
+<h4 id="code-2">Code</h4>
+<ul>
+<li>
+<p><a href="https://github.com/kimtyweter/Facility-Location-Models/blob/main/MCLP.ipynb">Jupyter Notebook</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kimtyweter/Facility-Location-Models/blob/main/mclp.py">Python</a></p>
+</li>
+</ul>
 <h3 id="repohttpsgithubcomkimtyweterfacility-location-models"><a href="https://github.com/kimtyweter/Facility-Location-Models">Repo</a></h3>
 
         </div>

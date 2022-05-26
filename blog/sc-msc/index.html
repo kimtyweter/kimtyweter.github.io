@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Yu-Heng Chien</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Python">
+  <meta name="author" content="Yu-Heng">
+  <meta name="generator" content="Hugo 0.98.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://kimtyweter.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://kimtyweter.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://kimtyweter.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://kimtyweter.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://kimtyweter.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://kimtyweter.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://kimtyweter.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://kimtyweter.github.io"><img class="img-fluid"
+          src="https://kimtyweter.github.io/images/coding.png" alt="Yu-Heng Chien"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/channel/UChCM67bFLkjnGxsmWYaFYNg/featured"><i class="ti-youtube"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/kimtyweter"><i class="ti-github"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/kimtyweter/"><i class="ti-linkedin"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://kimtyweter.github.io"><img class="img-fluid"
+            src="https://kimtyweter.github.io/images/coding.png" alt="Yu-Heng Chien"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://kimtyweter.github.io/resume/">Resume</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://kimtyweter.github.io/about/">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://kimtyweter.github.io/blog/">Project</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://kimtyweter.github.io/contact/">Contact</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://kimtyweter.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/supply-chain"
+          class="text-primary">Supply chain</a>
+        
+        <h2>Solving Production Optimization Problem by Gurobi Package</h2>
+        <div class="mb-3 post-meta">
+          <span>By Yu-Heng</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>25 May 2022</span>
+          
+        </div>
+        
+        <img src="https://kimtyweter.github.io/images/post/617project.png" class="img-fluid w-100 mb-4" alt="Solving Production Optimization Problem by Gurobi Package">
+        
+        <div class="content mb-5">
+          <h2 id="situation"><strong>Situation</strong></h2>
+<p>MCS Corporation produces an amazing toy called DinoBall. This toy is so popular that MCS Corporation can run 8 retail stores dedicated to selling just this product. MCS Corporation is dedicated to meeting all demand for Dinoball. The toy is produced at 3 production facilities owned by MCS Corporation, each of which has multiple production lines dedicated to producing the DinoBall toy. The characteristics of each of these production lines are a function of their age: newer production lines produce the DinoBall toy quicker and use less power.
+MCS Corporation plans monthly for production levels across its facilities based on the demand for DinoBall. Currently, DinoBall operates under the policy that each facility will, monthly, produce the same number of toys. In other words, the facilities are ‘balanced’ in that each of them produces 13 of DinoBall’s monthly demand. MCS Corporation likes the idea of equal ‘wear and tear’ on each production line at a particular facility: MCS Corporation currently implements the requirement that every production line at a facility runs for the same length of time during a month. For purposes of this analysis, you can assume that a ‘month’ consists of four 40 hour weeks (for a total of 160 hours). Each production line has the required salaried staff to operate the production lines who all work 40 hours per week. MCS Corporation contracts with LM Trucking to transport DinoBall from their facilities to their retail stores. LM Trucking needs your team to solve an optimization problem to determine the shipment levels and associated costs. The policy of LM Trucking is then to charge a premium of 20% to MCS corporation in billing them for the logistics services. MCS is charged for the energy they use to run their production lines. Due to their age, each production line requires different amounts of energy (kWh) and each production facility has negotiated a set price per kWh with the power company.
+MCS Corporation hired your group to address several areas of interest that they believe can be ad- dressed using Industrial and Systems Engineering models and methods. They provided you with past data (e.g., historical demand levels, distances between facilities and retail stores, characteristics of pro- duction lines) about their company to help address these areas of interest. The past data is available in the associated <a href="https://github.com/kimtyweter/production-optimization/blob/main/Project%20Data.xlsx">Excel file</a>. The MCS Corporation is interested in addressing two ‘what-if’ questions independent of each other.</p>
+<h5 id="question-1">Question 1:</h5>
+<p>MCS Corporation is considering removing the policy that each facility is responsible for produc- ing the same number of toys. They believe that this would drive down their total operating costs but are concerned about the idea of restructuring their company (i.e., they may need to relocate workers amongst their facilities, increase worker hours). MCS Corporation is interested in deter- mining the amount of savings that would result from removing this policy. Note that the “even wear and tear” policy on the production lines will remain in place.</p>
+<h5 id="question-2">Question 2:</h5>
+<p>MCS Corporation has an opportunity to update all production lines with the new technology ‘FastProd’. This new production line will decrease production costs of DinoBall since FastProd produces at a faster rate with less energy. They believe that the life cycle of each new production line will be 3 years. The company that sells FastProd insists that they will only install FastProd at the facilities of MCS Corporation if all production lines are outfitted with FastProd. MCS plans to sell each existing production line that is replaced; however, MCS is unsure how much they will be able to sell the used lines for. MCS Corporation would like to determine a ‘reserve price,’ which is the maximum amount they are willing to pay for this type of contract, in preparing to negotiate with the company that produces FastProd.</p>
+<h2 id="task"><strong>Task</strong></h2>
+<p>This project is about helping MCS Corporation to minimize their operating cost by optimizing their production and transportation process using linear programming with Gurobi. We provide three linear programming models to solve the following problems:</p>
+<ol>
+<li>Original Model:
+What is the optimal quantity for each factory producing the same quantity?</li>
+<li>‘What If’ question 1 Model:
+What is the optimal quantity for each factory producing a different quantity?</li>
+<li>‘What If’ question 2 Model:
+What is the reserve price of the old production line if the company replaces the new production line?</li>
+</ol>
+<p>After applying Gurobi, we will get the results related to the model, including units produced at each factory (decision variables), the minimum cost (the objective function) based on all the necessary limitations (constraints).</p>
+<h2 id="action"><strong>Action</strong></h2>
+<p>We were given some information about the factories and customers. We define that information into parameters in our model:
+<img src="/images/617parameters.png" alt=""></p>
+<h4 id="decision-variables">Decision Variables</h4>
+<p><strong>u</strong>ijm: the number of units transported from factory <strong>i</strong> to store <strong>j</strong> in month <strong>m</strong></p>
+<p><strong>S</strong>ilm: the number of units produced at factory <strong>i</strong> from production line <strong>l</strong> in month <strong>m</strong></p>
+<h4 id="objective-function">Objective function</h4>
+<p>Our objective is minimizing the annual total cost which includes cost of production and cost of transportation. The summation of transportation cost from each factory [i] to store [j] will be the total transportation cost. The cost of production at each factory[i] for production line [l] is equal to the unit production cost [c] multiply by the total unit produced [S] at the respective factory [i] for production line[l]. There is 20% of premium charged by LM Trucking, this is reflected by the multiplication of 1.2 which is 120% of the total cost. The period is 1 year, hence summing the total cost of 12 months.</p>
+<p><img src="/images/617obj_f.png" alt=""></p>
+<h4 id="constraints">Constraints</h4>
+<ol>
+<li><strong>Demand Fulfilment on Transportation</strong>: this constraint ensures the number of units transported from all the factory to store [j] can fulfil the demand of each store [j].</li>
+</ol>
+<p><img src="/images/617_C_1.png" alt=""></p>
+<ol start="2">
+<li><strong>Production Capacity</strong>: this constraint ensures the total production for all the production lines does not exceed the production capacity of each factory [i] every month.</li>
+</ol>
+<p><img src="/images/617_C_2.png" alt=""></p>
+<ol start="3">
+<li><strong>Demand Fulfilment on Factory</strong>: this constraint ensures the total units produced in 3 factories able to fulfil DinoBall’s monthly demand [m].</li>
+</ol>
+<p><img src="/images/617_C_3.png" alt=""></p>
+<ol start="4">
+<li><strong>Transportation Units Can’t Exceed Production Units</strong>: this constraint ensures the total units transported from facility [i] to store [j] less than or equal to the total units of production at facility [i] from all the production lines [l] in month [m].</li>
+</ol>
+<p><img src="/images/617_C_4.png" alt=""></p>
+<ol start="5">
+<li><strong>Consistent Production</strong>: this constraint ensures the total units transported from facility [i] to store [j] less than or equal to the total units of production at facility [i] from all the production lines [l] in month [m].</li>
+</ol>
+<p><img src="/images/617_C_5.png" alt=""></p>
+<ol start="6">
+<li><strong>Equal Wear and Tear</strong>: these constraints ensure consistent wear and tear for each production line. The run time for each production line is equal to units produced by each production line divide by the rate of production of each production line.</li>
+</ol>
+<p><img src="/images/617_C_6.png" alt=""></p>
+<ol start="7">
+<li><strong>Non-negativity</strong>: this constraint ensures all decision variable are non-negativity.</li>
+</ol>
+<p><img src="/images/617_C_7.png" alt=""></p>
+<h4 id="assumptions">Assumptions</h4>
+<ol>
+<li>Every truck carries specific demand, but the unit transportation cost was calculated based on full capacity.</li>
+<li><strong>Fixed holding cost</strong> - Assume the holding cost for each store is known and fixed.</li>
+<li>Inventory Model wasn’t considered since inventory capacity at the stores wasn’t known.</li>
+<li><strong>Each truck can only transport to one store</strong> - Assume there is no detour to another store when transporting from factory i to store j.</li>
+</ol>
+<h2 id="result"><strong>Result</strong></h2>
+<p>Based on our analysis, the total cost of the original model is <strong>$2,747,837.5</strong> and the total saving for removing constant unit production in every factory is <strong>$1,242,638</strong>. This model is recommended if the cost of restructuring the company is lower than the total saving amount from model 1. According to the analysis, “Fast Prod” production lines are capable to save $5,810,068 over three years compared to the old production lines. “Fast Prod” is highly recommended if the cost of upgrading the production lines is lower than <strong>$5,810,068</strong>. Besides, this saving has not included the salvage value of old production line. If we assume the old production lines have a total salvage value which is equal to 10% of the new production lines. The total saving would be <strong>$5,810,068 – 0.9 * Cost of Installing “Fast Prod”</strong>.
+The inventory model would also be recommended for lowering the cost of the model. Inventory could be potentially stored at stores where the holding cost per unit is less than the transportation cost of the unit. Also, the trucks could carry up to a full 250 units with normal optimization problem becoming a Routing and Scheduling problem.</p>
+<h2 id="reference"><strong>Reference</strong></h2>
+<p>Gurobi Jupyter notebook modeling examples. Gurobi. (2022, April 4). Retrieved May 4, 2022, from: <a href="https://www.gurobi.com/resource/modeling-examples-using-the-gurobi-python-api-in-jupyter-notebook/">https://www.gurobi.com/resource/modeling-examples-using-the-gurobi-python-api-in-jupyter-notebook/</a></p>
+<h2 id="code"><strong>Code</strong></h2>
+<ul>
+<li><a href="https://github.com/kimtyweter/production-optimization/blob/main/617project.ipynb">Jupyter Notebook</a></li>
+<li><a href="https://github.com/kimtyweter/production-optimization/blob/main/617project.py">Python</a></li>
+</ul>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://kimtyweter.github.io"><img src="https://kimtyweter.github.io/images/coding.png" alt="Yu-Heng Chien"></a>
+      </div>
+               
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="tel:979-326-0966"><i
+                class="ti-mobile mr-3 text-primary"></i>979-326-0966</a></li>
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>College Station, Texas</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:kimtyweter@tamu.edu"><i
+                class="ti-email mr-3 text-primary"></i>kimtyweter@tamu.edu</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.youtube.com/channel/UChCM67bFLkjnGxsmWYaFYNg/featured">youtube</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/kimtyweter">github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/in/kimtyweter/">linkedin</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/data-science/">Data science</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/data-visualization/">Data visualization</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/optimization/">Optimization</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/software-engineer/">Software engineer</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/supply-chain/">Supply chain</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://kimtyweter.github.io/resume/">Resume</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://kimtyweter.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://kimtyweter.github.io/blog/">Project</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://kimtyweter.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://kimtyweter.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://kimtyweter.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://kimtyweter.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://kimtyweter.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://kimtyweter.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://kimtyweter.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://kimtyweter.github.io/plugins/search/mark.js"></script>
+
+<script src="https://kimtyweter.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://kimtyweter.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>

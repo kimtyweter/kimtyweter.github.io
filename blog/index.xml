@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 25 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solving Production Optimization Problem by Gurobi Package</title>
-      <link>https://kimtyweter.github.io/blog/msc/</link>
+      <link>https://kimtyweter.github.io/blog/sc-msc/</link>
       <pubDate>Wed, 25 May 2022 10:07:47 +0600</pubDate>
       
-      <guid>https://kimtyweter.github.io/blog/msc/</guid>
+      <guid>https://kimtyweter.github.io/blog/sc-msc/</guid>
       <description>Situation MCS Corporation produces an amazing toy called DinoBall. This toy is so popular that MCS Corporation can run 8 retail stores dedicated to selling just this product.</description>
     </item>
     
@@ -71,12 +71,12 @@
     </item>
     
     <item>
-      <title>Solving UFLP Problem</title>
+      <title>Solving Facility Location Problems</title>
       <link>https://kimtyweter.github.io/blog/sc-facility/</link>
       <pubDate>Mon, 16 May 2022 10:07:47 +0600</pubDate>
       
       <guid>https://kimtyweter.github.io/blog/sc-facility/</guid>
-      <description>Question1 The file 10node.xlsx contains data for a 10- node instance of the UFLP, with nodes located on the unit square and I = J, pictured in Figure 8.</description>
+      <description>Introduction Where to set up factories and workshops is one of the typical problems of industrial engineering.</description>
     </item>
     
     <item>

@@ -26,12 +26,12 @@
     </item>
     
     <item>
-      <title>Solving UFLP Problem</title>
+      <title>Solving Facility Location Problems</title>
       <link>https://kimtyweter.github.io/blog/sc-facility/</link>
       <pubDate>Mon, 16 May 2022 10:07:47 +0600</pubDate>
       
       <guid>https://kimtyweter.github.io/blog/sc-facility/</guid>
-      <description>Question1 The file 10node.xlsx contains data for a 10- node instance of the UFLP, with nodes located on the unit square and I = J, pictured in Figure 8.</description>
+      <description>Introduction Where to set up factories and workshops is one of the typical problems of industrial engineering.</description>
     </item>
     
   </channel>
