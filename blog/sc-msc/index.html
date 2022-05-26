@@ -163,52 +163,52 @@ MCS Corporation hired your group to address several areas of interest that they 
 <h2 id="task"><strong>Task</strong></h2>
 <p>This project is about helping MCS Corporation to minimize their operating cost by optimizing their production and transportation process using linear programming with Gurobi. We provide three linear programming models to solve the following problems:</p>
 <ol>
-<li>Original Model:
+<li><strong>Original Model:</strong>
 What is the optimal quantity for each factory producing the same quantity?</li>
-<li>‘What If’ question 1 Model:
+<li><strong>‘What If’ question 1 Model:</strong>
 What is the optimal quantity for each factory producing a different quantity?</li>
-<li>‘What If’ question 2 Model:
+<li><strong>‘What If’ question 2 Model:</strong>
 What is the reserve price of the old production line if the company replaces the new production line?</li>
 </ol>
 <p>After applying Gurobi, we will get the results related to the model, including units produced at each factory (decision variables), the minimum cost (the objective function) based on all the necessary limitations (constraints).</p>
 <h2 id="action"><strong>Action</strong></h2>
 <p>We were given some information about the factories and customers. We define that information into parameters in our model:
-<img src="/images/617parameters.png" alt=""></p>
+<img src="/images/617project/617parameters.png" alt=""></p>
 <h4 id="decision-variables">Decision Variables</h4>
 <p><strong>u</strong>ijm: the number of units transported from factory <strong>i</strong> to store <strong>j</strong> in month <strong>m</strong></p>
 <p><strong>S</strong>ilm: the number of units produced at factory <strong>i</strong> from production line <strong>l</strong> in month <strong>m</strong></p>
 <h4 id="objective-function">Objective function</h4>
 <p>Our objective is minimizing the annual total cost which includes cost of production and cost of transportation. The summation of transportation cost from each factory [i] to store [j] will be the total transportation cost. The cost of production at each factory[i] for production line [l] is equal to the unit production cost [c] multiply by the total unit produced [S] at the respective factory [i] for production line[l]. There is 20% of premium charged by LM Trucking, this is reflected by the multiplication of 1.2 which is 120% of the total cost. The period is 1 year, hence summing the total cost of 12 months.</p>
-<p><img src="/images/617obj_f.png" alt=""></p>
+<p><img src="/images/617project/617obj_f.png" alt=""></p>
 <h4 id="constraints">Constraints</h4>
 <ol>
 <li><strong>Demand Fulfilment on Transportation</strong>: this constraint ensures the number of units transported from all the factory to store [j] can fulfil the demand of each store [j].</li>
 </ol>
-<p><img src="/images/617_C_1.png" alt=""></p>
+<p><img src="/images/617project/617_C_1.png" alt=""></p>
 <ol start="2">
 <li><strong>Production Capacity</strong>: this constraint ensures the total production for all the production lines does not exceed the production capacity of each factory [i] every month.</li>
 </ol>
-<p><img src="/images/617_C_2.png" alt=""></p>
+<p><img src="/images/617project/617_C_2.png" alt=""></p>
 <ol start="3">
 <li><strong>Demand Fulfilment on Factory</strong>: this constraint ensures the total units produced in 3 factories able to fulfil DinoBall’s monthly demand [m].</li>
 </ol>
-<p><img src="/images/617_C_3.png" alt=""></p>
+<p><img src="/images/617project/617_C_3.png" alt=""></p>
 <ol start="4">
 <li><strong>Transportation Units Can’t Exceed Production Units</strong>: this constraint ensures the total units transported from facility [i] to store [j] less than or equal to the total units of production at facility [i] from all the production lines [l] in month [m].</li>
 </ol>
-<p><img src="/images/617_C_4.png" alt=""></p>
+<p><img src="/images/617project/617_C_4.png" alt=""></p>
 <ol start="5">
 <li><strong>Consistent Production</strong>: this constraint ensures the total units transported from facility [i] to store [j] less than or equal to the total units of production at facility [i] from all the production lines [l] in month [m].</li>
 </ol>
-<p><img src="/images/617_C_5.png" alt=""></p>
+<p><img src="/images/617project/617_C_5.png" alt=""></p>
 <ol start="6">
 <li><strong>Equal Wear and Tear</strong>: these constraints ensure consistent wear and tear for each production line. The run time for each production line is equal to units produced by each production line divide by the rate of production of each production line.</li>
 </ol>
-<p><img src="/images/617_C_6.png" alt=""></p>
+<p><img src="/images/617project/617_C_6.png" alt=""></p>
 <ol start="7">
 <li><strong>Non-negativity</strong>: this constraint ensures all decision variable are non-negativity.</li>
 </ol>
-<p><img src="/images/617_C_7.png" alt=""></p>
+<p><img src="/images/617project/617_C_7.png" alt=""></p>
 <h4 id="assumptions">Assumptions</h4>
 <ol>
 <li>Every truck carries specific demand, but the unit transportation cost was calculated based on full capacity.</li>
@@ -226,6 +226,10 @@ The inventory model would also be recommended for lowering the cost of the model
 <li><a href="https://github.com/kimtyweter/production-optimization/blob/main/617project.ipynb">Jupyter Notebook</a></li>
 <li><a href="https://github.com/kimtyweter/production-optimization/blob/main/617project.py">Python</a></li>
 </ul>
+<h2 id="authors"><strong>Authors</strong></h2>
+<p>Yu Heng Chien, Ching Ju Hsiao, Shu Nee Khor, Chia Wei Liu, Harsh Rajendra Somani</p>
+<h5 id="instructor-dr-joseph-geunes">Instructor: Dr. Joseph Geunes</h5>
+<p><strong>Texas A&amp;M University Department of Industrail Engineering</strong></p>
 
         </div>
 

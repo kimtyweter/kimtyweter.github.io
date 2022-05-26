@@ -155,24 +155,12 @@
           <h2 id="introduction">Introduction</h2>
 <p>Where to set up factories and workshops is one of the typical problems of industrial engineering. This type of model usually takes into account issues such as demand, shipping costs and inventory costs to find the most suitable location to set up facilities.</p>
 <p>Therefore, this article applies three common models to solve facility location problems:</p>
-<ol>
-<li>Uncapacitated fixed-charge location problem(UFLP):</li>
-</ol>
-<ul>
-<li><strong>Minimize fixed + transportation cost</strong></li>
-</ul>
-<ol start="2">
-<li>Set covering location problem(SCLP):</li>
-</ol>
-<ul>
-<li><strong>Minimize number of facilities</strong></li>
-</ul>
-<ol start="3">
-<li>Maximum covering location problem(MCLP):</li>
-</ol>
-<ul>
-<li><strong>Maximize covered demands</strong></li>
-</ul>
+<h5 id="1-uncapacitated-fixed-charge-location-problemuflp">1. Uncapacitated fixed-charge location problem(UFLP):</h5>
+<p>Minimize fixed + transportation cost</p>
+<h5 id="2-set-covering-location-problemsclp">2. Set covering location problem(SCLP):</h5>
+<p>Minimize number of facilities</p>
+<h5 id="3-maximum-covering-location-problemmclp">3. Maximum covering location problem(MCLP):</h5>
+<p>Maximize covered demands</p>
 <h2 id="language-tool-package">Language/ Tool/ Package</h2>
 <h5 id="python"><strong>Python</strong></h5>
 <ol>
@@ -419,6 +407,7 @@
 </tbody>
 </table>
 <h2 id="uncapacitated-fixed-charge-location-problem-uflp">Uncapacitated Fixed-charge Location Problem (UFLP)</h2>
+<h6 id="--minimize-fixed--transportation-cost">- Minimize fixed + transportation cost</h6>
 <h4 id="example">Example:</h4>
 <p>The background information contains nodes located on the unit square and I = J. The background information lists the x- and y-coordinates, demands hi, and fixed costs fj for each node, as well as the transportation cost cij between each pair of nodes i and j. Transportation costs equal 10 times the Euclidean distance between the nodes. All fixed costs equal 200.</p>
 <h4 id="solution-approach">Solution Approach:</h4>
@@ -443,6 +432,7 @@
 </li>
 </ul>
 <h2 id="set-covering-location-problem-sclp">Set Covering Location Problem (SCLP)</h2>
+<h6 id="--minimize-number-of-facilities">- Minimize number of facilities</h6>
 <h4 id="example-1">Example:</h4>
 <p>Using the data from background information, solve the SCLP exactly by implementing it in the modeling language with a MIP solver. Set the fixed cost of every facility equal to 1.
 Assume that facility j covers customer i if cij ≤ 2.5. Report the optimal locations.</p>
@@ -466,6 +456,7 @@ Assume that facility j covers customer i if cij ≤ 2.5. Report the optimal loca
 </li>
 </ul>
 <h2 id="maximum-covering-location-problem-mclp">Maximum covering location problem (MCLP)</h2>
+<h6 id="--maximize-covered-demands">- Maximize covered demands</h6>
 <h4 id="example-2">Example:</h4>
 <p>Using the data from background information, solve the MCLP exactly by implementing it in the modeling language with a MIP solver. Set p = 4. Assume that facility j covers customer i if cij ≤ 2.5.</p>
 <p>Report the optimal locations and the total number of demands covered.</p>
