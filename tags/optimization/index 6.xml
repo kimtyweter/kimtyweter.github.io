@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Optimization on Yu-Heng Chien</title>
+    <link>https://kimtyweter.github.io/tags/optimization/</link>
+    <description>Recent content in Optimization on Yu-Heng Chien</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 25 May 2022 10:07:47 +0600</lastBuildDate><atom:link href="https://kimtyweter.github.io/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solving Production Optimization Problem by Gurobi Package</title>
+      <link>https://kimtyweter.github.io/blog/sc-msc/</link>
+      <pubDate>Wed, 25 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/sc-msc/</guid>
+      <description>Situation MCS Corporation produces an amazing toy called DinoBall. This toy is so popular that MCS Corporation can run 8 retail stores dedicated to selling just this product.</description>
+    </item>
+    
+    <item>
+      <title>Solving Stochastic Inventory Problem: Continuous Review</title>
+      <link>https://kimtyweter.github.io/blog/sc-stochastic-inventory-continuous-review/</link>
+      <pubDate>Thu, 19 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/sc-stochastic-inventory-continuous-review/</guid>
+      <description>Language:  Python: Determine reorder point and order quantity to minimize expected cost per year  Situation Suppose now that the rate at which the plant uses power-lock mechanisms is stochastic and normally distributed, with a mean of 192 per day (8 per hour) and a standard deviation of 17.</description>
+    </item>
+    
+    <item>
+      <title>Solving Stochastic Inventory Problem: Periodic Review</title>
+      <link>https://kimtyweter.github.io/blog/sc-stochastic-inventory-periodic-review/</link>
+      <pubDate>Thu, 19 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/sc-stochastic-inventory-periodic-review/</guid>
+      <description>Language:  Python: Created full algorithm for solving periofic review&amp;rsquo;s stochastic inventory problem in real life  Situation Weekly demand for refrigerators at an appliance store has a Poisson distribution with 4.</description>
+    </item>
+    
+    <item>
+      <title>Solving Facility Location Problems</title>
+      <link>https://kimtyweter.github.io/blog/sc-facility/</link>
+      <pubDate>Mon, 16 May 2022 10:07:47 +0600</pubDate>
+      
+      <guid>https://kimtyweter.github.io/blog/sc-facility/</guid>
+      <description>Introduction Where to set up factories and workshops is one of the typical problems of industrial engineering.</description>
+    </item>
+    
+  </channel>
+</rss>
